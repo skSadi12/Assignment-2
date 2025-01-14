@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="input/main.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header class="flex justify-between items-center mx-3 my-3 md:mx-9">
-      <a href="index.html"
+  <body class="">
+    <!-- header start -->
+    <header class="flex justify-between items-center mx-3 my-3 md:mx-9 md:flex-row flex-col">
+      <div class="flex md:gap-72 justify-between w-full md:w-auto">
+        <a href="index.html"
         ><img
           class="w-[130px] h-[50]"
           src="images/c4u full logo_2022 1.png"
@@ -22,6 +24,7 @@
           <li><a href="#">Contact us </a></li>
         </ul>
       </nav>
+      </div>
       <div class="flex items-center gap-3 md:gap-7">
         <button
           class="bg-[#F44335] text-white px-2 py-1 rounded-md shadow-gray-600 shadow-md hover:bg-orange-700 transition-all duration-300"
@@ -44,5 +47,50 @@
         </svg>
       </div>
     </header>
+    <!-- hero section start -->
+     <section class="mt-4 md:mt-8 md:mx-24 mx-4 flex items-center justify-center flex-col md:flex-row ">
+        <div>
+            <p class="font-bold text-[18px]">Discover <span class="text-[#F44335]">-</span> Interact<span class="text-[#F44335]"> - </span> Engage </p>
+            <h1 class="font-bold text-[64px]">Google <br>
+                <span class="text-[#F44335] border-b-[#F44335]  border-b-[3px] ">IT Support</span> 
+                <br>Certificate
+            </h1>
+            <p class="text-[#072125] mt-8 text-[18px]">This is your path to a career in IT. In this program, you’ll learn in-demand skills with no degree or experience required. </p>
+            <div class="flex mt-8 items-center justify-evenly text-center">
+                <div>
+                    <p class="text-[#00FF84] text-[24px]">438</p>
+                    <p>Videos</p>
+                </div>
+                <div>
+                    <p class="text-[#00FF84] text-[24px]">151</p>
+                    <p>Readings</p>
+                </div>
+                <div>
+                    <p class="text-[#00FF84] text-[24px]">108 </p>
+                    <p>Quizzes</p>
+                </div>
+                <div>
+                    <p class="text-[#00FF84] text-[24px]">24</p>
+                    <p> Exercises</p>
+                </div>
+                <div>
+                    <p class="text-[#00FF84] text-[24px]">4</p>
+                    <p>Assigments </p>
+                </div>
+            </div>
+            <div class="flex gap-9 mt-8">
+                <button class="bg-[#F44335] text-white px-3 py-2 rounded hover:bg-black hover:text-white scale-105 transition duration-300">
+                    Sign up
+                </button>
+                <button class="bg-[#FFFFFF]  px-3 py-2 rounded hover:bg-black hover:text-white scale-105 transition duration-300 border-black border">
+                    
+                    Learn more
+                </button>
+            </div>
+        </div>
+        <div>
+            <img class="w-full" src="images/university-students.png" alt="">
+        </div>
+     </section>
   </body>
 </html>

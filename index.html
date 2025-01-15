@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmltag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="input/main.css" />
     <title>Up Skill</title>
   </head>
-  <body >
+  <body class="bg-white dark:bg-gray-900">
     <!-- header start -->
     <header class="flex justify-between items-center mx-3 my-3 md:mx-9 ">
         <a href="index.html"
@@ -17,7 +17,7 @@
           alt="logo"
       /></a>
       <nav class="md:block lg:block hidden">
-        <ul class="flex gap-2 md:gap-8 items-center">
+        <ul class="flex gap-2 md:gap-8 items-center dark:text-white">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li class="text-[#F44335]"><a href="#">Upskill</a></li>
@@ -31,7 +31,7 @@
         >
           Register Interest
         </button>
-        <svg
+        <svg class="w-[40px] dark:stroke-white" id="switch"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -50,7 +50,7 @@
     <main>
             <!-- hero section start -->
      <section class="mt-4 md:mt-8 md:mx-24 mx-4 flex items-center justify-center flex-col md:flex-row ">
-        <div>
+        <div class="dark:text-white">
             <p class="font-bold text-[18px]">Discover <span class="text-[#F44335]">-</span> Interact<span class="text-[#F44335]"> - </span> Engage </p>
             <h1 class="font-bold text-[64px]">Google <br>
                 <span class="text-[#F44335] border-b-[#F44335]  border-b-[3px] ">IT Support</span> 
@@ -80,10 +80,10 @@
                 </div>
             </div>
             <div class="flex gap-9 mt-8">
-                <button class="bg-[#F44335] text-white px-3 py-2 rounded hover:bg-black hover:text-white scale-105 transition duration-300">
+                <button class="bg-[#F44335] text-white  px-3 py-2 rounded hover:bg-black hover:text-white scale-105 transition duration-300">
                     Sign up
                 </button>
-                <button class="bg-[#FFFFFF]  px-3 py-2 rounded hover:bg-black hover:text-white scale-105 transition duration-300 border-black border">
+                <button class="bg-[#FFFFFF]  px-3 py-2 dark:text-black dark:text-white dark:hover:bg-green-400 rounded hover:bg-black hover:text-white scale-105 transition duration-300 border-black border">
                     
                     Learn more
                 </button>
@@ -94,11 +94,10 @@
         </div>
      </section>
      <!-- success section start -->
-     <section class="mt-8 mb-8 md:mt-10 md:mx-24 mx-4 ">
+     <section class="mt-8 mb-8 md:mt-10 md:mx-24 mx-4 dark:text-white dark:bg-gray-800 ">
         <div class="flex items-center justify-center gap-3 flex-col md:flex-row  h-full">
-            <p class="text-center border-r flex justify-center items-center h-auto md:h-[135px] border-r-[D1D3D4]">Pave your path to career success by gaining  a  professional  Google certificate with the support of C4U  
-            </p> 
-            <img class=" md:w-4/6 lg:7/8 " src="images/All Logo Selection.png" alt="">
+            <p class="text-center border-r flex justify-center items-center h-auto md:h-[135px] border-r-[D1D3D4]">Pave your path to career success by gaining  a  professional  Google certificate with the support of C4U</p> 
+            <img class="  md:w-4/6 lg:7/8 " src="images/All Logo Selection.png" alt="">
         </div>
      </section>
      <!--learn section start  -->
@@ -297,6 +296,12 @@
          <hr>
          <p class="text-center py-5">Copyright 2022 Creatives For You LTD</p>
     </footer>
+    <script>
+        const htmltag = document.getElementById("htmltag");
+        document.getElementById("switch").addEventListener("click", function (){
+            htmltag.classList.toggle('dark');
+        });
+    </script>
         
   </body>
 </html>
